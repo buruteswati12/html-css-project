@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f6fff6;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #f6fff6;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #0a642d;
+}
+
+.book-btn {
+  background: #0a642d;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #095427;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+}
+
+.about-img img {
+  width: 480px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.03);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  color: #0a642d;
+  margin-bottom: 10px;
+}
+
+.about-text h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* Goals Section */
+.goals-section {
+  text-align: center;
+  padding: 80px 8%;
+  background-color: #f6fff6;
+}
+
+.goals-title {
+  font-size: 2rem;
+  color: #0a642d;
+  margin-bottom: 20px;
+}
+
+.goals-desc {
+  max-width: 850px;
+  margin: 0 auto 50px;
+}
+
+/* Goals Gallery Layout */
+.goals-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.left-img {
+  flex: 1 1 45%;
+}
+
+.left-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.right-imgs {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.right-imgs img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.goals-gallery img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 90%;
+  }
+
+  .goals-gallery {
+    flex-direction: column;
+  }
+
+  .right-imgs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .right-imgs img {
+    width: 45%;
+  }
+}
+/* Footer Section */
+.footer {
+  background-color: #eaf2e3;
+  padding: 60px 0 20px 0;
+  color: #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-about h2 {
+  color: #2b3a0a;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-about p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footer-socials a img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.footer-socials a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-links h3,
+.footer-support h3,
+.footer-contact h3 {
+  color: #2b3a0a;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.footer-links ul,
+.footer-support ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-support ul li,
+.footer-contact ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links ul li a,
+.footer-support ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-support ul li a:hover {
+  color: #4a772f;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  color: #555;
+  font-size: 0.95rem;
+}

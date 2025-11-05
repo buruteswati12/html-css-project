@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Shaif’s Cuisine</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="https://d33wubrfki0l68.cloudfront.net/5509abae36c9c1c7d55a83ea5a1990f0d3b09c0a/12a1e/images/logo.svg" alt="">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="book.html" class="book-btn">Book Table</a>
+    </nav>
+  </header>
+
+  <!-- Contact Info Boxes -->
+  <section class="contact-page">
+    <div class="contact-container">
+      <div class="contact-card">
+        <div class="icon"><i ><img src="https://d33wubrfki0l68.cloudfront.net/4d9f5ac84201972450cc866ccfee0ae2fb4ad2fe/f4f2e/images/wall-clock-icon.svg" alt=""></i></div>
+        <h3>10 AM - 7 PM</h3>
+        <p>Opening Hour</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon"><i ><img src="https://d33wubrfki0l68.cloudfront.net/c98678d730ee777c722aa6fc644e149ba86e74d4/240fe/images/address-icon.svg" alt=""></i></div>
+        <h3>GEC, Chittagong</h3>
+        <p>Address</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon"><i ><img src="https://d33wubrfki0l68.cloudfront.net/2d39cf6a442498142bd935a1ca5409ca5869e4be/e52ef/images/phone-icon.svg" alt=""></i></div>
+        <h3>+880123443</h3>
+        <p>Call Now</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section">
+    <h2>Contact & Inquiry</h2>
+    <form class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" placeholder="Enter your first name" />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Enter your last name" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Enter subject" />
+        </div>
+      </div>
+
+      <div class="form-group full-width">
+        <label for="message">Message</label>
+        <textarea id="message" rows="6" placeholder="Write your message"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2021 Shaif’s Cuisine | All rights reserved</p>
+  </footer>
+</body>
+</html>

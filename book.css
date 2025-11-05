@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #f2f8f3;
+}
+
+.logo h2 {
+  color: #2e3b2f;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2e3b2f;
+  font-weight: 500;
+}
+
+.book-btn {
+  background-color: #204d2a;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Booking Section */
+.booking-section {
+  background-color: #f2f8f3;
+  padding: 3rem 5%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2e3b2f;
+}
+
+/* Form Styling */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  color: #2e3b2f;
+  font-weight: 500;
+}
+
+input, select {
+  padding: 0.8rem;
+  border: none;
+  background-color: #dfe8df;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  width: 150px;
+  padding: 0.8rem;
+  background-color: #204d2a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #173d21;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
